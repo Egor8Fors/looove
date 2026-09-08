@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fce9ec" />
+    <title>Одно особенное приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    <main>
+      <nav class="nav"><span class="brand">secret date <i>♡</i></span><span class="nav-note">только для тебя</span></nav>
+      <section class="hero">
+        <p class="eyebrow reveal">У меня есть идея</p>
+        <h1 class="reveal delay-1">Можно я украду<br /><em>один твой вечер?</em></h1>
+        <p class="intro reveal delay-2">Я продумал всё до мелочей. Тебе нужно только выбрать день и время — остальное оставь мне.</p>
+        <button class="invite-button reveal delay-3" id="openPlanner">Выбрать наш вечер <span>↓</span></button>
+        <div class="orbit reveal delay-3" aria-hidden="true"><span class="spark s1">✦</span><span class="spark s2">✦</span><span class="heart">♥</span></div>
+      </section>
+      <section class="promise reveal delay-3"><div class="promise-number">01</div><p>Маршрут, музыка, бронирование и маленький сюрприз — <strong>моя забота.</strong></p><div class="promise-star">✳</div></section>
+      <section class="planner" id="planner" aria-labelledby="plannerTitle">
+        <div class="planner-heading"><p class="eyebrow">Твой единственный выбор</p><h2 id="plannerTitle">Когда тебе<br /><em>хочется сиять?</em></h2></div>
+        <div class="selection-card">
+          <div class="card-top"><span>выбери дату</span><span class="step">01 / 02</span></div>
+          <div class="date-scroller" id="dateScroller" aria-label="Выбор даты"></div>
+          <div class="time-label"><span>выбери время</span><span class="step">02 / 02</span></div>
+          <div class="times" id="times">
+            <button data-time="18:30">18:30</button><button class="selected" data-time="19:00">19:00</button><button data-time="19:30">19:30</button><button data-time="20:00">20:00</button>
+          </div>
+          <button class="confirm" id="confirm">Это мой вечер <span>→</span></button>
+          <p class="hint">Никаких адресов и спойлеров. Просто доверься мне.</p>
+        </div>
+      </section>
+      <section class="after" id="after" hidden>
+        <div class="ticket">
+          <div class="ticket-top"><span>Подтверждено</span><span>♡</span></div>
+          <p class="ticket-label">НАШ ВЕЧЕР</p><h2 id="chosenDate">Скоро</h2><p id="chosenTime">19:00</p><div class="ticket-line"></div><p class="ticket-copy">Твоя задача — быть собой.<br />Остальное уже в моём списке.</p>
+        </div>
+        <p class="closing">Я напишу тебе все нужные детали.<br /><em>А пока — предвкушай.</em></p>
+      </section>
+    </main>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
